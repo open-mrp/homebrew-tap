@@ -6,25 +6,25 @@ cask "dfm-mcp" do
     end
   end
 
-  version "1.1.1"
+  version "1.2.0"
 
   on_macos do
     on_arm do
-      sha256 "d885338ce570f974cfc3cdbf1d629aca19d784e2c85c81b81fe5af2527585982"
+      sha256 "1a38abb4f3560021b1ee77549cf250e37932891b0fee43e16f44240d1ae3f6f4"
       url "https://github.com/open-mrp/dfm-mcp/releases/download/v#{version}/dfm-mcp_#{version}_darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "313aab84c214915d5d93f6fc02ab0dc3d3f03d3d5d4ba3b6b40b241054b4638c"
+      sha256 "3958a62548dfeb0897e8e207628594dec5c3d50808e5308db15e7a1ea7780e14"
       url "https://github.com/open-mrp/dfm-mcp/releases/download/v#{version}/dfm-mcp_#{version}_darwin_amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "13e979bfb18a9557f3264a7cbdd278b83ad518df3d3846e737ec928443c2c137"
+      sha256 "5a55b7f7ee9a4b13a4657b569d308093f027e24d3804016d4cc3c10ea3a0c31d"
       url "https://github.com/open-mrp/dfm-mcp/releases/download/v#{version}/dfm-mcp_#{version}_linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "fb6219e40766a251de62fb6e7ca2ebf8b7456257bdb6681aba05580dd5c5e02c"
+      sha256 "975dc21fe201822e9ac8ebc4f771188f806c1f1607ed611080e2e4cb2aa819be"
       url "https://github.com/open-mrp/dfm-mcp/releases/download/v#{version}/dfm-mcp_#{version}_linux_amd64.tar.gz"
     end
   end
