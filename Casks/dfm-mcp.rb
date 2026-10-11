@@ -6,25 +6,25 @@ cask "dfm-mcp" do
     end
   end
 
-  version "1.2.0"
+  version "1.3.0"
 
   on_macos do
     on_arm do
-      sha256 "1a38abb4f3560021b1ee77549cf250e37932891b0fee43e16f44240d1ae3f6f4"
+      sha256 "166aeb4d86558b866c58d81542206dff24abc3979dadb600fe9bedf5d0c566a8"
       url "https://github.com/open-mrp/dfm-mcp/releases/download/v#{version}/dfm-mcp_#{version}_darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "3958a62548dfeb0897e8e207628594dec5c3d50808e5308db15e7a1ea7780e14"
+      sha256 "5e1f5c261ee8fad701d80f53407b9ba954bdbdaf7fddaa2e44fd4d1f056390cc"
       url "https://github.com/open-mrp/dfm-mcp/releases/download/v#{version}/dfm-mcp_#{version}_darwin_amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "5a55b7f7ee9a4b13a4657b569d308093f027e24d3804016d4cc3c10ea3a0c31d"
+      sha256 "5d8b1529f34ed31dfa5d9a6538caa6fbb6c6c81f58df2d82dccf76e7d8cd5803"
       url "https://github.com/open-mrp/dfm-mcp/releases/download/v#{version}/dfm-mcp_#{version}_linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "975dc21fe201822e9ac8ebc4f771188f806c1f1607ed611080e2e4cb2aa819be"
+      sha256 "b24076b031845260503ebdbb1d8562986dcfa3188bbd87ccd2b6b85743ba2ad0"
       url "https://github.com/open-mrp/dfm-mcp/releases/download/v#{version}/dfm-mcp_#{version}_linux_amd64.tar.gz"
     end
   end
@@ -50,5 +50,9 @@ cask "dfm-mcp" do
                       { "mcpServers": { "dfm": { "command": "dfm-mcp" } } }
       opencode      add to ~/.config/opencode/opencode.json:
                       { "mcp": { "dfm": { "type": "local", "command": ["dfm-mcp"] } } }
+
+    Help decide what the engine improves next: dfm-mcp telemetry on
+    sends how many checks it runs, their verdicts and file formats, never a drawing.
+    dfm-mcp telemetry shows exactly what is counted; telemetry off stops it.
   EOS
 end
